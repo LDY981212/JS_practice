@@ -21,8 +21,9 @@ const factorialFor = function(number){
   return product;
 };
 
-const factorialForEach = numbers.forEach((element, index, array) => {
-  element *= element;
+let factorialForEach = 1;
+numbers.forEach((element, index, array) => {
+  factorialForEach *= element;
 });
 
 const facotorial = numbers.reduce(
